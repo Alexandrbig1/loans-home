@@ -10,7 +10,7 @@ export const IconMenuWrapper = styled.div`
   cursor: pointer;
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1440px) {
     display: none;
   }
 `;
@@ -20,7 +20,7 @@ export const MenuBurgerContainer = styled.div`
   gap: 1.2rem;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1440px) {
     display: none;
   }
 `;
@@ -46,14 +46,14 @@ export const Menu = styled.div`
 
 export const IconMenu = styled(TiThMenu)`
   font-size: 2.4rem;
-  color: ${(p) => p.theme.colors.whiteColor};
+  color: ${(p) => p.theme.colors.mainTextColor};
 `;
 
 export const LogoImgWrapper = styled.div`
   top: -2rem;
   left: 1.2rem;
   position: absolute;
-  background-color: ${({ theme }) => theme.colors.whiteColor};
+  background-color: ${({ theme }) => theme.colors.mainTextColor};
   border-radius: 50rem;
   width: 3.2rem;
   height: 3.2rem;
@@ -172,4 +172,28 @@ export const BurgerMenuFooterWrapper = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
+`;
+
+export const HeaderMenuButton = styled.button`
+  display: block;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: ${primaryFont};
+  color: ${({ theme }) => theme.colors.whiteColor};
+  background-color: ${({ theme }) => theme.colors.accentColor};
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all var(--primary-transition);
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.accentColorHover};
+  }
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
 `;

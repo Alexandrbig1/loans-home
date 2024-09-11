@@ -11,6 +11,7 @@ import {
   BurgerMenuFooterWrapper,
   CloseBurgerIcon,
   CloseBurgerWrapper,
+  HeaderMenuButton,
 } from "./MenuBurger.styled";
 import { useMenu } from "../../context/ToggleMenuContext";
 import SocialIcons from "../UI/SocialIcons/SocialIcons";
@@ -19,7 +20,12 @@ import menuItems from "../../data/menuLists";
 
 // eslint-disable-next-line react/prop-types
 export default function MenuBurger() {
-  const { toggleMenu, menuOpen } = useMenu();
+  const { toggleMenu, menuOpen, approvedModal } = useMenu();
+
+  const handleApprovedClick = () => {
+    approvedModal();
+    toggleMenu();
+  };
 
   const menuVars = (index) => ({
     initial: {
@@ -76,6 +82,9 @@ export default function MenuBurger() {
             ))}
           </BurgerMenuItems>
         </nav>
+        <HeaderMenuButton type="button" onClick={handleApprovedClick}>
+          Get Pre-Approved
+        </HeaderMenuButton>
       </BurgerContainer>
       <BurgerMenuFooterWrapper>
         <BurgerLogoWrapper>

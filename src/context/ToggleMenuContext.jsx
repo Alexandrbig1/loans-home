@@ -11,7 +11,7 @@ export const MenuContext = ({ children }) => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);
   };
 
-  const attendEventModal = () => {
+  const approvedModal = () => {
     setModalIsOpen((prevMenuOpen) => !prevMenuOpen);
   };
 
@@ -20,7 +20,7 @@ export const MenuContext = ({ children }) => {
       value={{
         toggleMenu,
         menuOpen,
-        attendEventModal,
+        approvedModal,
         modalIsOpen,
       }}
     >

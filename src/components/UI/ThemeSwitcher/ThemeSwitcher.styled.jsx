@@ -4,13 +4,13 @@ import { LuMoon } from "react-icons/lu";
 
 export const SunIcon = styled(FiSun)`
   font-size: 2.4rem;
-  color: ${(p) => p.theme.colors.blackTextColor};
+  color: ${(p) => p.theme.colors.mainTextColor};
   transition: all var(--primary-transition);
 `;
 
 export const MoonIcon = styled(LuMoon)`
   font-size: 2.4rem;
-  color: ${(p) => p.theme.colors.blackTextColor};
+  color: ${(p) => p.theme.colors.mainTextColor};
   transition: all var(--primary-transition);
 `;
 
@@ -32,16 +32,7 @@ export const ThemeSwitcherBtn = styled.button`
   justify-content: center;
 
   &:hover {
-    background-color: ${(p) => p.theme.colors.blackTextColor};
-  }
-
-  &:hover {
-    ${SunIcon} {
-      color: ${(p) => p.theme.colors.blackTextColor};
-    }
-    ${MoonIcon} {
-      color: ${(p) => p.theme.colors.blackTextColor};
-    }
+    background-color: ${(p) => p.theme.colors.heroOverlayColor};
   }
 `;
 

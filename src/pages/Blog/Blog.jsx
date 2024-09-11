@@ -1,5 +1,5 @@
 function Blog() {
-  return <div>Blog Blog</div>;
+  return <div>Blog</div>;
 }
 
 export default Blog;

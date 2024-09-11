@@ -52,5 +52,5 @@ export const LogoTextHome = styled.span`
     10% 48%,
     0 48%
   );
-  background-color: green;
+  background-color: ${(p) => p.theme.colors.accentColor};
 `;

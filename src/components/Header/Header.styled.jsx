@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { primaryFont } from "../fonts";
 import { NavLink } from "react-router-dom";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 export const HeaderWrapper = styled.header`
   display: flex;
@@ -21,7 +22,7 @@ export const HeaderWrapper = styled.header`
 export const HeaderNavMenu = styled.ul`
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1440px) {
     display: flex;
     align-items: center;
     gap: 1.2rem;
@@ -85,11 +86,13 @@ export const HeaderNavLink = styled(NavLink)`
   white-space: nowrap;
   font-weight: 700;
   font-family: ${primaryFont};
-  color: ${({ theme }) => theme.colors.greyColor};
+  color: ${({ theme }) => theme.colors.whiteColorLow};
   line-height: 1.28571;
   transition: all var(--primary-transition);
   width: 100%;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 
   &:hover,
   &:focus {
@@ -105,4 +108,33 @@ export const BurgerWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 1.2rem;
+`;
+
+export const ArrowIcon = styled(IoMdArrowDropdown)`
+  font-size: 1.6rem;
+  color: ${({ theme }) => theme.colors.accentColor};
+`;
+
+export const HeaderButton = styled.button`
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+    padding: 1.2rem 2.4rem;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: ${primaryFont};
+    color: ${({ theme }) => theme.colors.whiteColor};
+    background-color: ${({ theme }) => theme.colors.accentColor};
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all var(--primary-transition);
+
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.accentColorHover};
+    }
+  }
 `;

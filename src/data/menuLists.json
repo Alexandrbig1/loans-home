@@ -1,10 +1,17 @@
 [
-  { "id": "home", "to": "/", "list": "Get Started", "iconKey": "home" },
+  {
+    "id": "home",
+    "to": "/",
+    "list": "Get Started",
+    "iconKey": "home",
+    "arrow": true
+  },
   {
     "id": "about",
     "to": "/about",
     "list": "Grow With Us",
-    "iconKey": "about"
+    "iconKey": "about",
+    "arrow": true
   },
   {
     "id": "search",

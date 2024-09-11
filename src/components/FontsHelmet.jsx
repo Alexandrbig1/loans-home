@@ -10,7 +10,7 @@ const FontsHelmet = () => {
         crossOrigin="anonymous"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=DM+Sans:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=DM+Sans:wght@400;500&family=Playwrite+CU:wght@100..400&display=swap"
         rel="stylesheet"
       />
     </Helmet>
