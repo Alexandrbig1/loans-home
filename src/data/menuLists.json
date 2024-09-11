@@ -1,0 +1,16 @@
+[
+  { "id": "home", "to": "/", "list": "Get Started", "iconKey": "home" },
+  {
+    "id": "about",
+    "to": "/about",
+    "list": "Grow With Us",
+    "iconKey": "about"
+  },
+  {
+    "id": "search",
+    "to": "/search",
+    "list": "Loan Officer Search",
+    "iconKey": "search"
+  },
+  { "id": "blog", "to": "/blog", "list": "Blog", "iconKey": "blog" }
+]
