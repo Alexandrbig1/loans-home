@@ -133,16 +133,19 @@ export const HeaderDropDownBtn = styled.button`
   cursor: pointer;
   transition: all var(--primary-transition);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: ${({ theme }) => theme.colors.accentColorHover};
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     ${HeaderPhoneIcon} {
       color: #ccff33;
     }
   }
-  &:hover {
+  &:hover,
+  &:focus {
     ${HeaderMailIcon} {
       color: #f9c80e;
     }
@@ -186,7 +189,8 @@ export const RightDropDownLink = styled(Link)`
   width: 100%;
   text-transform: uppercase;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: ${({ theme }) => theme.colors.blackTextColor};
   }
 `;
@@ -222,6 +226,9 @@ export const HeaderItems = styled.li`
   transition: all var(--primary-transition);
 
   &:hover ${HeaderDropDown}, &:hover ${HeaderDropDownRight} {
+    display: block;
+  }
+  &:focus ${HeaderDropDown}, &:focus ${HeaderDropDownRight} {
     display: block;
   }
 `;
@@ -301,7 +308,8 @@ export const HeaderButton = styled.button`
     cursor: pointer;
     transition: all var(--primary-transition);
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: ${({ theme }) => theme.colors.accentColorHover};
     }
   }

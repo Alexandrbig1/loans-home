@@ -29,16 +29,25 @@
 ### Screenshots:
 
 ![Loans Home](/public/images/loans1.jpg) _Screenshot 1
-(Home Page)_
+(Home Page Dark Theme)_
 
 ![Loans Home](/public/images/loans2.jpg) _Screenshot 2
 (Home Page Get Approved Form)_
 
 ![Loans Home](/public/images/loans3.jpg) _Screenshot 3
-(Home Page Mobile Devices)_
+(Home Page Light Theme)_
 
 ![Loans Home](/public/images/loans4.jpg) _Screenshot 4
+(Home Page Light Theme)_
+
+![Loans Home](/public/images/loans5.jpg) _Screenshot 5
+(Home Page Mobile Devices)_
+
+![Loans Home](/public/images/loans6.jpg) _Screenshot 6
 (Home Page Mobile Device Menu)_
+
+![Loans Home](/public/images/loans7.jpg) _Screenshot 7
+(Home Page Mobile Device Dark Theme)_
 
 ---
 
