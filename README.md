@@ -28,13 +28,13 @@
 
 ### Screenshots:
 
-![Loans Home](/public/images/screenshots/loans.jpg) _Screenshot 1
+![Loans Home](public/images/screenshots/loans.jpg) _Screenshot 1
 (Home Page)_
 
-![Loans Home](/public/images/loans.jpg) _Screenshot 2
+![Loans Home](/images/loans.jpg) _Screenshot 2
 (Home Page Get Approved Form)_
 
-![Loans Home](/public/images/loans.jpg) _Screenshot 3
+![Loans Home](images/loans.jpg) _Screenshot 3
 (Home Page Mobile Devices)_
 
 ![Loans Home](/public/images/loans.jpg) _Screenshot 4
