@@ -1,4 +1,4 @@
-# Neighborhood Loans
+# Loans Home
 
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
@@ -20,7 +20,7 @@
 - [Technologies](#technologies-used)
 - [Features](#features)
 - [License](#license)
-- [Contact](#contact)
+- [Contact](#connect-with-me)
 
 ---
 
@@ -60,7 +60,7 @@
 
 ## Issues
 
-If you encounter any issues or bugs, please feel free to [open an issue](https://github.com/Alexandrbig1/trail_quest/issues) on this repository. Provide a detailed description of the problem and steps to reproduce it, if possible.
+If you encounter any issues or bugs, please feel free to [open an issue](https://github.com/Alexandrbig1/loans-home/issues) on this repository. Provide a detailed description of the problem and steps to reproduce it, if possible.
 
 ---
 
