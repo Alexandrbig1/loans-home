@@ -12,6 +12,7 @@ import {
   HeaderDropDown,
   HeaderDropDownBtn,
   HeaderDropDownBtnWrapper,
+  HeaderDropDownCallBtn,
   HeaderDropDownImg,
   HeaderDropDownItem,
   HeaderDropDownLink,
@@ -53,14 +54,22 @@ function Header() {
                       <HeaderDropDownMenu>
                         <HeaderDropDownItem>
                           <HeaderDropDownBtnWrapper>
-                            <HeaderDropDownBtn>
+                            <HeaderDropDownBtn
+                              href="mailto:contact@alexsmagin.dev"
+                              aria-label="Send an email to support"
+                              title="Send us an email"
+                            >
                               Text Us
                               <HeaderMailIcon />
                             </HeaderDropDownBtn>
-                            <HeaderDropDownBtn>
+                            <HeaderDropDownCallBtn
+                              href="tel:+1234567890"
+                              aria-label="Call our support number"
+                              title="Call us now"
+                            >
                               Call Us
                               <HeaderPhoneIcon />
-                            </HeaderDropDownBtn>
+                            </HeaderDropDownCallBtn>
                           </HeaderDropDownBtnWrapper>
                         </HeaderDropDownItem>
                         <HeaderDropDownItem>

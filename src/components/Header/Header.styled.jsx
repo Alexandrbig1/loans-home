@@ -116,7 +116,37 @@ export const HeaderDropDownBtnWrapper = styled.div`
   gap: 1.2rem;
 `;
 
-export const HeaderDropDownBtn = styled.button`
+export const HeaderDropDownBtn = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.6rem 2.4rem;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: ${primaryFont};
+  color: ${({ theme }) => theme.colors.whiteColor};
+  background-color: ${({ theme }) => theme.colors.accentColor};
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all var(--primary-transition);
+
+  &:hover,
+  &:focus {
+    background-color: ${({ theme }) => theme.colors.accentColorHover};
+  }
+
+  &:hover,
+  &:focus {
+    ${HeaderMailIcon} {
+      color: #f9c80e;
+    }
+  }
+`;
+
+export const HeaderDropDownCallBtn = styled.a`
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -142,12 +172,6 @@ export const HeaderDropDownBtn = styled.button`
   &:focus {
     ${HeaderPhoneIcon} {
       color: #ccff33;
-    }
-  }
-  &:hover,
-  &:focus {
-    ${HeaderMailIcon} {
-      color: #f9c80e;
     }
   }
 `;

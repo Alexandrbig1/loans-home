@@ -52,6 +52,9 @@
 ![Loans Home](/public/images/loans8.jpg) _Screenshot 8
 (404 Page Not Found)_
 
+![Loans Home](/public/images/loans9.jpg) _Screenshot 9
+(Google Light House)_
+
 ---
 
 ## Technologies Used
