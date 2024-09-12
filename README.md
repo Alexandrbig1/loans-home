@@ -28,7 +28,7 @@
 
 ### Screenshots:
 
-![Loans Home](public/images/screenshots/loans.jpg) _Screenshot 1
+![Loans Home](public/images/loans.jpg) _Screenshot 1
 (Home Page)_
 
 ![Loans Home](/images/loans.jpg) _Screenshot 2
