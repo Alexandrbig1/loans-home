@@ -1,5 +1,10 @@
 import { Helmet } from "react-helmet-async";
-import { NotFoundText, NotFoundWrapper } from "./NotFound.styled";
+import {
+  NotFoundImg,
+  NotFoundText,
+  NotFoundTitle,
+  NotFoundWrapper,
+} from "./NotFound.styled";
 
 function NotFound() {
   return (
@@ -44,13 +49,12 @@ function NotFound() {
         <meta name="twitter:image" content="/neighborhood.png" />
       </Helmet>
       <NotFoundWrapper>
+        <NotFoundImg src="/public/images/404.svg" alt="Page Not Found" />
+        <NotFoundTitle>Oops! We Can’t Find That Page.</NotFoundTitle>
         <NotFoundText>
-          <h1>Oops! We Can’t Find That Page.</h1>
-          <p>
-            It looks like the page you’re looking for doesn’t exist or has been
-            moved. Don’t worry, though—our homepage has everything you need to
-            get back on track.
-          </p>
+          It looks like the page you’re looking for doesn’t exist or has been
+          moved. Don’t worry, though—our homepage has everything you need to get
+          back on track.
         </NotFoundText>
       </NotFoundWrapper>
     </>
