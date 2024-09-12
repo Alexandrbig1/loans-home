@@ -49,6 +49,9 @@
 ![Loans Home](/public/images/loans7.jpg) _Screenshot 7
 (Home Page Mobile Device Dark Theme)_
 
+![Loans Home](/public/images/loans8.jpg) _Screenshot 8
+(404 Page Not Found)_
+
 ---
 
 ## Technologies Used
