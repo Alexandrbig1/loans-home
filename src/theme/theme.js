@@ -16,6 +16,8 @@ export const theme = {
       burgerOverlay: "rgb(250, 250, 250,0.9)",
       heroOverlayColor: "#1FA55550",
       dropDownBg: "#354f52",
+      inputBgColor: "#f8f9fa",
+      inputBgColorHover: "#354f52",
     },
   },
   dark: {
@@ -34,6 +36,8 @@ export const theme = {
       burgerOverlay: "rgb(36, 36, 36,0.9)",
       heroOverlayColor: "#1FA55550",
       dropDownBg: "#adb5bd",
+      inputBgColor: "#f8f9fa",
+      inputBgColorHover: "#354f52",
     },
   },
 };

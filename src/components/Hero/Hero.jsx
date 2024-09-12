@@ -1,3 +1,5 @@
+import { useState } from "react";
+import HeroSelectData from "../../data/heroSelect.json";
 import {
   ApplyTodayText,
   ApplyWrapper,
@@ -8,13 +10,25 @@ import {
   HeroTitle,
   HeroTitleWrapper,
   HeroWrapper,
-  WhereArrow,
+  SelectedHeroText,
+  SelectedOption,
+  SelectedOptionText,
+  WhereArrowDown,
+  WhereArrowUp,
   WhereIcon,
   WhereTextWrapper,
   WhereWrapper,
 } from "./Hero.styled";
 
 function Hero() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedHeroText, setSelectedHeroText] = useState("");
+
+  const handleOptionClick = (text) => {
+    setSelectedHeroText(text);
+    setIsOpen(false);
+  };
+
   return (
     <HeroContainer>
       <HeroWrapper>
@@ -27,12 +41,26 @@ function Hero() {
         <CTAWrapper>
           <ApplyTodayText>Apply Today</ApplyTodayText>
           <ApplyWrapper>
-            <WhereWrapper>
+            <WhereWrapper onClick={() => setIsOpen(!isOpen)}>
               <WhereTextWrapper>
                 <WhereIcon />
-                <span>Where to?</span>
+                <SelectedHeroText>
+                  {selectedHeroText || "Where to?"}
+                </SelectedHeroText>
               </WhereTextWrapper>
-              <WhereArrow />
+              {isOpen ? <WhereArrowUp /> : <WhereArrowDown />}
+              {isOpen && (
+                <SelectedOption>
+                  {HeroSelectData.map(({ id, heroSelect }) => (
+                    <SelectedOptionText
+                      key={id}
+                      onClick={() => handleOptionClick(heroSelect)}
+                    >
+                      {heroSelect}
+                    </SelectedOptionText>
+                  ))}
+                </SelectedOption>
+              )}
             </WhereWrapper>
             <GoWrapper to="about">Go!</GoWrapper>
           </ApplyWrapper>

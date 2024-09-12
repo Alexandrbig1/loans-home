@@ -1,0 +1,14 @@
+[
+  {
+    "heroSelect": "Where To",
+    "id": 1
+  },
+  {
+    "heroSelect": "Choose your destination",
+    "id": 2
+  },
+  {
+    "heroSelect": "Choose Your Journey",
+    "id": 3
+  }
+]

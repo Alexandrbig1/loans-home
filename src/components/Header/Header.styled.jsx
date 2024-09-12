@@ -229,6 +229,9 @@ export const HeaderItems = styled.li`
 export const HeaderDropDownLink = styled.div`
   font-size: 1.4rem;
   white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   font-weight: 700;
   font-family: ${primaryFont};

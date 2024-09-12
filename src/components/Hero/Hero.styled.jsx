@@ -130,11 +130,33 @@ export const WhereWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  background-color: #f8f9fa;
   padding: 1.2rem;
   padding-left: 2.4rem;
   text-transform: uppercase;
+  position: relative;
+  border: none;
+  outline: none;
+  background: none;
+  border-top-left-radius: 1.4rem;
+  border-bottom-left-radius: 1.4rem;
+  background-color: ${(p) => p.theme.colors.inputBgColor};
+  width: 80%;
+
+  font-family: ${primaryFont};
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.11111;
+  color: ${(p) => p.theme.colors.black};
+  transition: all var(--primary-transition);
+
+  &:hover {
+    background-color: ${(p) => p.theme.colors.lightGreyColor};
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
 `;
 
 export const WhereTextWrapper = styled.div`
@@ -155,6 +177,8 @@ export const GoWrapper = styled(Link)`
   color: ${({ theme }) => theme.colors.whiteColor};
   font-size: 1.6rem;
   transition: all var(--primary-transition);
+  border-top-right-radius: 1.4rem;
+  border-bottom-right-radius: 1.4rem;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.accentColorHover};
@@ -167,7 +191,72 @@ export const WhereIcon = styled(GiSwapBag)`
   color: #e09f3e;
 `;
 
-export const WhereArrow = styled(IoMdArrowDropdown)`
+export const WhereArrowDown = styled(IoMdArrowDropdown)`
   font-size: 2.4rem;
   color: ${({ theme }) => theme.colors.accentColor};
+`;
+
+export const WhereArrowUp = styled(IoMdArrowDropdown)`
+  font-size: 2.4rem;
+  color: ${({ theme }) => theme.colors.accentColor};
+  transform: rotate(180deg);
+`;
+
+export const SelectedOption = styled.div`
+  width: 100%;
+  position: absolute;
+  bottom: 105%;
+  left: 0;
+  box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(18, 20, 23, 0.05);
+  border-radius: 1.4rem;
+  transition: all var(--primary-transition);
+  padding: 1.4rem 1.8rem;
+  background-color: ${(p) => p.theme.colors.inputBgColor};
+
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  &:hover {
+    background-color: ${(p) => p.theme.colors.lightGreyColor};
+  }
+
+  @media (min-width: 768px) {
+    bottom: unset;
+    top: 105%;
+  }
+`;
+
+export const SelectedOptionText = styled.span`
+  font-family: ${primaryFont};
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  color: ${(p) => p.theme.colors.greyColor};
+  transition: all var(--primary-transition);
+
+  &:hover {
+    cursor: pointer;
+    color: ${(p) => p.theme.colors.blackTextColor};
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid ${(p) => p.theme.colors.greyColor};
+  }
+`;
+
+export const SelectedHeroText = styled.span`
+  font-family: ${primaryFont};
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  color: ${(p) => p.theme.colors.blackTextColor};
+
+  @media (min-width: 768px) {
+    font-size: 1.4rem;
+  }
 `;
