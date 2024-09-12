@@ -31,7 +31,7 @@ export const HeroContainer = styled.div`
 
   @media (min-width: 1440px) {
     margin: 0 1.2rem;
-    padding: 12.8rem 9.6rem;
+    padding: 10.8rem 9.6rem 12.8rem;
   }
 `;
 

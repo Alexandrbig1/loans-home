@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { primaryFont } from "../fonts";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { MdAlternateEmail } from "react-icons/md";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 export const HeaderWrapper = styled.header`
   display: flex;
@@ -74,11 +76,174 @@ export const MobileOverlay = styled.div`
   transition: transform 5s ease-in-out;
 `;
 
+export const HeaderMailIcon = styled(MdAlternateEmail)`
+  font-size: 1.6rem;
+  color: ${({ theme }) => theme.colors.whiteColor};
+  transition: all var(--primary-transition);
+`;
+
+export const HeaderPhoneIcon = styled(FaPhoneVolume)`
+  font-size: 1.6rem;
+  color: ${({ theme }) => theme.colors.whiteColor};
+  transition: all var(--primary-transition);
+`;
+
+export const HeaderDropDownMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  transition: all var(--primary-transition);
+`;
+
+export const HeaderDropDownItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border-radius: 1.2rem;
+  width: 100%;
+  min-width: 13rem;
+  transition: all var(--primary-transition);
+`;
+
+export const HeaderDropDownBtnWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.2rem;
+`;
+
+export const HeaderDropDownBtn = styled.button`
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.6rem 2.4rem;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: ${primaryFont};
+  color: ${({ theme }) => theme.colors.whiteColor};
+  background-color: ${({ theme }) => theme.colors.accentColor};
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all var(--primary-transition);
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.accentColorHover};
+  }
+
+  &:hover {
+    ${HeaderPhoneIcon} {
+      color: #ccff33;
+    }
+  }
+  &:hover {
+    ${HeaderMailIcon} {
+      color: #f9c80e;
+    }
+  }
+`;
+
+export const HeaderDropDown = styled.div`
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transition: all var(--primary-transition);
+  /* width: 110%; */
+  background-color: ${(p) => p.theme.colors.dropDownBg};
+  border-radius: 1.2rem;
+  padding: 1.2rem 0;
+  z-index: 1000;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+`;
+
+export const RightDropDownMenu = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  transition: all var(--primary-transition);
+
+  & li {
+    border-bottom: 0.1px solid #354f52;
+  }
+`;
+
+export const RightDropDownLink = styled(Link)`
+  font-size: 1.4rem;
+  white-space: nowrap;
+  font-weight: 700;
+  font-family: ${primaryFont};
+  color: ${({ theme }) => theme.colors.greyColor};
+  line-height: 1.28571;
+  transition: all var(--primary-transition);
+  width: 100%;
+  text-transform: uppercase;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.blackTextColor};
+  }
+`;
+
+export const HeaderDropDownRight = styled.div`
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: all var(--primary-transition);
+  /* width: 110%; */
+  background-color: ${(p) => p.theme.colors.lightGreyColor};
+  border-radius: 1.2rem;
+  padding: 1.2rem 0;
+  z-index: 1000;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+`;
+
+export const HeaderDropDownImg = styled.img`
+  transition: all var(--primary-transition);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.4rem;
+`;
+
 export const HeaderItems = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  position: relative;
+  transition: all var(--primary-transition);
+
+  &:hover ${HeaderDropDown}, &:hover ${HeaderDropDownRight} {
+    display: block;
+  }
+`;
+
+export const HeaderDropDownLink = styled.div`
+  font-size: 1.4rem;
+  white-space: nowrap;
+  user-select: none;
+  font-weight: 700;
+  font-family: ${primaryFont};
+  color: ${({ theme }) => theme.colors.whiteColorLow};
+  line-height: 1.28571;
+  transition: all var(--primary-transition);
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: ${({ theme }) => theme.colors.mainTextColor};
+  }
 `;
 
 export const HeaderNavLink = styled(NavLink)`

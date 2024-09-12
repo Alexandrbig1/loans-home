@@ -4,7 +4,8 @@
     "to": "/",
     "list": "Get Started",
     "iconKey": "home",
-    "arrow": true
+    "arrow": true,
+    "start": true
   },
   {
     "id": "about",

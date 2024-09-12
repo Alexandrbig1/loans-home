@@ -15,6 +15,7 @@ export const theme = {
       lightGreyColor: "#e9ecef",
       burgerOverlay: "rgb(250, 250, 250,0.9)",
       heroOverlayColor: "#1FA55550",
+      dropDownBg: "#354f52",
     },
   },
   dark: {
@@ -32,6 +33,7 @@ export const theme = {
       lightGreyColor: "#e9ecef",
       burgerOverlay: "rgb(36, 36, 36,0.9)",
       heroOverlayColor: "#1FA55550",
+      dropDownBg: "#adb5bd",
     },
   },
 };
