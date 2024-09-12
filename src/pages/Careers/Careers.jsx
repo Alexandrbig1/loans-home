@@ -1,5 +1,5 @@
 function Careers() {
-  return <div>Careers</div>;
+  return <div>Careers Page</div>;
 }
 
 export default Careers;

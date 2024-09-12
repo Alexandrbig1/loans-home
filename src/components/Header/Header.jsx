@@ -1,4 +1,10 @@
 import Logo from "../UI/Logo/Logo";
+import MenuLists from "../../data/menuLists";
+import MemoizedThemeSwitcher from "../UI/ThemeSwitcher/ThemeSwitcher";
+import { motion } from "framer-motion";
+import MenuBurgerIcon from "./MenuBurgerIcon";
+import { useMenu } from "../../context/ToggleMenuContext";
+import ApprovedModal from "../UI/ApprovedModal/ApprovedModal";
 import {
   ArrowIcon,
   BurgerWrapper,
@@ -21,12 +27,6 @@ import {
   RightDropDownLink,
   RightDropDownMenu,
 } from "./Header.styled";
-import MenuLists from "../../data/menuLists";
-import MemoizedThemeSwitcher from "../UI/ThemeSwitcher/ThemeSwitcher";
-import { motion } from "framer-motion";
-import MenuBurgerIcon from "./MenuBurgerIcon";
-import { useMenu } from "../../context/ToggleMenuContext";
-import ApprovedModal from "../UI/ApprovedModal/ApprovedModal";
 
 function Header() {
   const { approvedModal } = useMenu();
@@ -116,7 +116,6 @@ function Header() {
               );
             })}
           </HeaderNavMenu>
-          {/* <MobileHeader /> */}
         </nav>
         <BurgerWrapper>
           <HeaderButton type="button" onClick={handleApprovedClick}>

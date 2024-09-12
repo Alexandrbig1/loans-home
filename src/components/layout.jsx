@@ -40,7 +40,7 @@ export const MainContainer = styled.main`
   justify-content: center;
   align-items: center;
   position: relative;
-
+  color: ${({ theme }) => theme.colors.mainTextColor};
   width: 100%;
   max-width: 375px;
   position: relative;

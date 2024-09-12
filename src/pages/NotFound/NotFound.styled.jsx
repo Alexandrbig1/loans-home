@@ -25,5 +25,5 @@ export const NotFoundText = styled.p`
   font-size: 1.6rem;
   line-height: 1.4444;
   letter-spacing: -0.02em;
-  color: ${({ theme }) => theme.colors.whiteColor};
+  color: ${({ theme }) => theme.colors.mainTextColor};
 `;

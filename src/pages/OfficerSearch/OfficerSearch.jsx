@@ -1,5 +1,5 @@
 function OfficerSearch() {
-  return <div>Loan Officer Search</div>;
+  return <div>Loan Officer Search Page</div>;
 }
 
 export default OfficerSearch;

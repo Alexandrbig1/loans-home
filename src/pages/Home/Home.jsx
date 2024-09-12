@@ -5,41 +5,44 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Open Code Chicago - Empowering Tech Enthusiasts</title>
+        <title>Neighborhood Loans - Your Trusted Home Loan Partner</title>
         <meta
           name="description"
-          content="Join Open Code Chicago to collaborate, learn, and grow in the tech community. We host events, workshops, and projects that bring developers together."
+          content="Neighborhood Loans provides expert mortgage services, helping you find the perfect home loan solution. Explore our mortgage options and apply online today."
         />
         <meta
           name="keywords"
-          content="Open Code Chicago, tech community, coding workshops, developer collaboration, open source projects, web development"
+          content="home loans, mortgage, refinance, first-time buyer, real estate loans, Neighborhood Loans"
         />
         <meta name="robots" content="index, follow" />
-
         <meta
           property="og:title"
-          content="Open Code Chicago - Empowering Tech Enthusiasts"
+          content="Neighborhood Loans - Your Trusted Home Loan Partner"
         />
         <meta
           property="og:description"
-          content="Open Code Chicago is a vibrant tech community focused on collaboration, learning, and growth. Explore our events and projects to elevate your skills."
+          content="Expert mortgage services at Neighborhood Loans. Whether you're buying a new home or refinancing, we have the right solution for you."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://opencodechicago.netlify.app" />
-        <meta property="og:image" content="/logo.png" />
-        <meta property="og:site_name" content="Open Code Chicago" />
-
+        <meta
+          property="og:url"
+          content="https://neighborhoodloans.netlify.app"
+        />
+        <meta property="og:image" content="/neighborhood.png" />
+        <meta property="og:site_name" content="Neighborhood Loans" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@alexsmagin29" />
         <meta name="twitter:site" content="@alexsmagin29" />
         <meta
           name="twitter:title"
-          content="Open Code Chicago - Empowering Tech Enthusiasts"
+          content="Neighborhood Loans - Your Trusted Home Loan Partner"
         />
         <meta
           name="twitter:description"
-          content="Join Open Code Chicago to connect with developers, participate in coding workshops, and contribute to open source projects."
+          content="Need a home loan? Neighborhood Loans offers a variety of mortgage solutions tailored to your needs. Apply now!"
         />
-        <meta name="twitter:image" content="/logo.png" />
+        <meta name="twitter:image" content="/neighborhood.png" />
+        <link rel="icon" href="/favicon.svg" />
       </Helmet>
       <Hero />
     </>
