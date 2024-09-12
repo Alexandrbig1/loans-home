@@ -26,9 +26,19 @@
 
 ## Screenshots
 
-[Live Demo](https://your-demo-link.com)
+### Screenshots:
 
-*You can explore the app using the link above.*
+![Loans Home](/public/images/loans.jpg) _Screenshot 1
+(Home Page)_
+
+![Loans Home](/public/images/loans.jpg) _Screenshot 2
+(Home Page Get Approved Form)_
+
+![Loans Home](/public/images/loans.jpg) _Screenshot 3
+(Home Page Mobile Devices)_
+
+![Loans Home](/public/images/loans.jpg) _Screenshot 4
+(Home Page Mobile Device Menu)_
 
 ---
 
