@@ -5,6 +5,38 @@
   "description": "Neighborhood Loans offers personalized mortgage solutions to help you achieve your dream of homeownership. Explore loan options, get expert advice, and take the next step today.",
   "main": "src/main.jsx",
   "private": true,
+  "homepage": "https://neighborhoodloans.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alexandrbig1/loans-home"
+  },
+  "bugs": {
+    "url": "https://github.com/Alexandrbig1/loans-home/issues"
+  },
+  "keywords": [
+    "neighborhood loans",
+    "mortgage",
+    "loans",
+    "react",
+    "html",
+    "css",
+    "javascript",
+    "js",
+    "frontend",
+    "frontend development",
+    "web development",
+    "web design",
+    "web",
+    "design",
+    "development",
+    "reactjs",
+    "react js",
+    "styled components",
+    "react components",
+    "react hooks",
+    "react router",
+    "github"
+  ],
   "version": "0.0.0",
   "type": "module",
   "scripts": {
