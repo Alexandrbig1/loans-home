@@ -36,7 +36,7 @@ export const FooterWrapper = styled.div`
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: ${({ theme }) => theme.colors.footerTextColor};
+  color: ${({ theme }) => theme.colors.mainTextColor};
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -72,12 +72,12 @@ export const YearWrapper = styled.div`
   font-size: 1.6rem;
   line-height: 1.3444;
   letter-spacing: -0.02em;
-  color: ${(p) => p.theme.colors.footerTextColor};
+  color: ${(p) => p.theme.colors.mainTextColor};
   white-space: nowrap;
 `;
 
 export const TradeMark = styled(PiTrademarkRegisteredFill)`
-  color: ${(p) => p.theme.colors.footerTextColor};
+  color: ${(p) => p.theme.colors.mainTextColor};
   font-size: 1.6rem;
 `;
 
@@ -87,6 +87,6 @@ export const FooterText = styled.p`
   font-size: 1.6rem;
   line-height: 1.3444;
   letter-spacing: -0.02em;
-  color: ${(p) => p.theme.colors.footerTextColor};
+  color: ${(p) => p.theme.colors.mainTextColor};
   white-space: nowrap;
 `;

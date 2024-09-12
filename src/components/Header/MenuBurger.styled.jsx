@@ -76,7 +76,7 @@ export const CloseBurgerMenu = styled.button`
   border: none;
   outline: none;
   background: none;
-  color: ${(p) => p.theme.colors.blueColor};
+  color: ${(p) => p.theme.colors.mainTextColor};
   top: -1.8rem;
   right: 1rem;
   position: absolute;
@@ -86,7 +86,7 @@ export const CloseBurgerMenu = styled.button`
   &:hover,
   &:focus {
     transform: rotate(90deg);
-    color: ${(p) => p.theme.colors.blueColorDark};
+    color: ${(p) => p.theme.colors.mainTextColor};
   }
 
   @media (min-width: 768px) {
